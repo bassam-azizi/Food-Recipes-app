@@ -11,8 +11,8 @@
 }
 
 .image {
-  border-radius: 50%;
-  width: 50%;
+  border-radius: 10%;
+  width: 60%;
 }
 .list {
   font-family: "Courier New", Courier, monospace;
@@ -27,5 +27,7 @@
   border-radius: 6px;
 }
 .ingredient {
-  width: 50%;
+  width: 80%;
+  float: right;
+  text-align: left;
 }

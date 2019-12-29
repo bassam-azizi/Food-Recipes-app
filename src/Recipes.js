@@ -5,17 +5,17 @@ const Recipes = ({ title, calories, image, ingredients }) => {
   return (
     <div className={style.recipes}>
       <h1 className={style.title}>{title}</h1>
+      <img className={style.image} src={image} alt="" />
+      <p>
+        <strong>Calories</strong> : {calories}
+      </p>
       <div className={style.ingredient}>
-        <p>
-          <strong>Calories</strong> : {calories}
-        </p>
         <ol className={style.list}>
           {ingredients.map(ingredient => (
             <li key={ingredient.name}>{ingredient.text}</li>
           ))}
         </ol>
       </div>
-      <img className={style.image} src={image} alt="" />
     </div>
   );
 };
